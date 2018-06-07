@@ -58,6 +58,10 @@ button:focus {
 	height: 50px;
 }
 
+.gray-body {
+	background-color: #f2f2f2;
+}
+
 
 /*---- 指纹识别 开始----*/
 
@@ -161,4 +165,96 @@ button:focus {
 	height: 100%;
 	outline: none;
 }
+
+
 /*---- 账号绑定 结束 ----*/
+
+
+/*---- 会议列表 开始 ----*/
+
+.meeting-choose {
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #ddd;
+	font-size: 18px;
+	height: 50px;
+}
+
+.meeting-choose .col-3 {
+	text-align: end;
+}
+
+.meeting-choose input {
+	border: none;
+	color: #999;
+}
+
+.meeting-choose .icon-date {
+	font-size: 24px !important;
+	color: #0062CC;
+}
+
+.meeting-room-use {
+	margin-top: 20px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.meeting-room-use .room-use-title {
+	display: flex;
+	align-items: center;
+	background-color: #0062CC;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	color: #fff;
+	font-size: 18px;
+	width: 100%;
+	height: 50px;
+	margin-bottom: 0;
+	padding-left: 20px;
+}
+
+.meeting-room-use .use-record {
+	background-color: #FFFFFF;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+	height: 245px;
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+	margin: 0;
+}
+
+.meeting-room-use .record-time {
+	border: 1px solid #ddd;
+	height: 50px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+.quarter-hour {
+	display: inline-block;
+	height: 24px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.record-time .quarter-hour {
+	margin-left: 2px;
+}
+
+.record-time .quarter-hour:first-child {
+	margin-left: 0;
+}
+
+.room-useable {
+	background-color: #28A745;
+}
+
+.room-used {
+	background-color: #DC3545;
+}
+
+
+/*---- 会议列表 结束 ----*/
