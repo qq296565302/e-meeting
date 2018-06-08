@@ -21,11 +21,7 @@
 		<link rel="stylesheet" href="css/main.css">
 		<!--图标-->
 		<link rel="stylesheet" type="text/css" href="css/font.css" />
-		<link href="css/animate.min.css" type="text/css" rel="stylesheet">
-		<!--动画库---css-->
-		<link href="css/mobiscroll_002.css" rel="stylesheet" type="text/css">
-		<link href="css/mobiscroll.css" rel="stylesheet" type="text/css">
-		<link href="css/mobiscroll_003.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="css/mobiscroll.2.13.2.css" />
 	</head>
 
 	<body class="gray-body">
@@ -59,7 +55,7 @@
 						</div>
 						<!--日期选择-->
 						<div class="col-7">
-							<span class="cc"><input name="appDate" id="appDate"  type="text" value="2015/05/25"></span>
+							<input id="meeting-date" placeholder="请选择会议日期" />  
 						</div>
 						<!--日期选择 图标-->
 						<div class="col-2">
@@ -76,7 +72,18 @@
 						</div>
 						<!--地点选择-->
 						<div class="col-9">
-							空
+							<div data-role="fieldcontain">
+								<select class="room-option" data-role="none">
+									<option value="1">全部会议室</option>
+									<option value="2">1号会议室</option>
+									<option value="3">2号会议室</option>
+									<option value="4">3号会议室</option>
+									<option value="5">4号会议室</option>
+									<option value="6">5号会议室</option>
+									<option value="7">6号会议室</option>
+									<option value="8">7号会议室</option>
+								</select>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -89,7 +96,7 @@
 						<div class="col-11">
 							<!--会议室预订时间 第一行 开始-->
 							<div class="row justify-content-center">
-								<div class="col record-time">
+								<div class="col-record record-time">
 									<time>8:00</time>
 									<div class="row justify-content-between">
 										<div class="col quarter-hour room-useable"></div>
@@ -98,7 +105,7 @@
 										<div class="col quarter-hour room-useable"></div>
 									</div>
 								</div>
-								<div class="col record-time">
+								<div class="col-record record-time">
 									<time>9:00</time>
 									<div class="row justify-content-between">
 										<div class="col quarter-hour room-used"></div>
@@ -107,8 +114,44 @@
 										<div class="col quarter-hour room-useable"></div>
 									</div>
 								</div>
-								<div class="col record-time">
+								<div class="col-record record-time">
 									<time>10:00</time>
+									<div class="row justify-content-between">
+										<div class="col quarter-hour room-useable"></div>
+										<div class="col quarter-hour room-used"></div>
+										<div class="col quarter-hour room-used"></div>
+										<div class="col quarter-hour room-useable"></div>
+									</div>
+								</div>
+								<div class="col-record record-time">
+									<time>11:00</time>
+									<div class="row justify-content-between">
+										<div class="col quarter-hour room-used"></div>
+										<div class="col quarter-hour room-useable"></div>
+										<div class="col quarter-hour room-useable"></div>
+										<div class="col quarter-hour room-useable"></div>
+									</div>
+								</div>
+								<div class="col-record record-time">
+									<time>12:00</time>
+									<div class="row justify-content-between">
+										<div class="col quarter-hour room-useable"></div>
+										<div class="col quarter-hour room-used"></div>
+										<div class="col quarter-hour room-used"></div>
+										<div class="col quarter-hour room-useable"></div>
+									</div>
+								</div>
+								<div class="col-record record-time">
+									<time>13:00</time>
+									<div class="row justify-content-between">
+										<div class="col quarter-hour room-used"></div>
+										<div class="col quarter-hour room-useable"></div>
+										<div class="col quarter-hour room-useable"></div>
+										<div class="col quarter-hour room-useable"></div>
+									</div>
+								</div>
+								<div class="col-record record-time">
+									<time>14:00</time>
 									<div class="row justify-content-between">
 										<div class="col quarter-hour room-useable"></div>
 										<div class="col quarter-hour room-used"></div>
@@ -121,108 +164,67 @@
 							
 							<!--会议室预订时间 第二行 开始-->
 							<div class="row justify-content-center">
-								<div class="col record-time">
-									<time>11:00</time>
-									<div class="row justify-content-between">
-										<div class="col quarter-hour room-used"></div>
-										<div class="col quarter-hour room-used"></div>
-										<div class="col quarter-hour room-used"></div>
-										<div class="col quarter-hour room-used"></div>
-									</div>
-								</div>
-								<div class="col record-time">
-									<time>12:00</time>
-									<div class="row justify-content-between">
-										<div class="col quarter-hour room-used"></div>
-										<div class="col quarter-hour room-useable"></div>
-										<div class="col quarter-hour room-useable"></div>
-										<div class="col quarter-hour room-useable"></div>
-									</div>
-								</div>
-								<div class="col record-time">
-									<time>13:00</time>
-									<div class="row justify-content-between">
-										<div class="col quarter-hour room-used"></div>
-										<div class="col quarter-hour room-used"></div>
-										<div class="col quarter-hour room-used"></div>
-										<div class="col quarter-hour room-useable"></div>
-									</div>
-								</div>
-							</div>
-							<!--会议室预订时间 第二行 结束-->
-							
-							<!--会议室预订时间 第三行 开始-->
-							<div class="row justify-content-center">
-								<div class="col record-time">
-									<time>14:00</time>
-									<div class="row justify-content-between">
-										<div class="col quarter-hour room-used"></div>
-										<div class="col quarter-hour room-used"></div>
-										<div class="col quarter-hour room-used"></div>
-										<div class="col quarter-hour room-used"></div>
-									</div>
-								</div>
-								<div class="col record-time">
+								<div class="col-record record-time">
 									<time>15:00</time>
 									<div class="row justify-content-between">
-										<div class="col quarter-hour room-used"></div>
-										<div class="col quarter-hour room-used"></div>
-										<div class="col quarter-hour room-used"></div>
-										<div class="col quarter-hour room-used"></div>
+										<div class="col quarter-hour room-useable"></div>
+										<div class="col quarter-hour room-useable"></div>
+										<div class="col quarter-hour room-useable"></div>
+										<div class="col quarter-hour room-useable"></div>
 									</div>
 								</div>
-								<div class="col record-time">
+								<div class="col-record record-time">
 									<time>16:00</time>
 									<div class="row justify-content-between">
 										<div class="col quarter-hour room-used"></div>
-										<div class="col quarter-hour room-used"></div>
-										<div class="col quarter-hour room-used"></div>
-										<div class="col quarter-hour room-used"></div>
-									</div>
-								</div>
-							</div>
-							<!--会议室预订时间 第三行 结束-->
-							
-							<!--会议室预订时间 第四行 开始-->
-							<div class="row justify-content-center">
-								<div class="col record-time">
-									<time>17:00</time>
-									<div class="row justify-content-between">
-										<div class="col quarter-hour room-used"></div>
-										<div class="col quarter-hour room-used"></div>
+										<div class="col quarter-hour room-useable"></div>
 										<div class="col quarter-hour room-useable"></div>
 										<div class="col quarter-hour room-useable"></div>
 									</div>
 								</div>
-								<div class="col record-time">
+								<div class="col-record record-time">
 									<time>17:00</time>
 									<div class="row justify-content-between">
 										<div class="col quarter-hour room-useable"></div>
+										<div class="col quarter-hour room-used"></div>
+										<div class="col quarter-hour room-used"></div>
+										<div class="col quarter-hour room-useable"></div>
+									</div>
+								</div>
+								<div class="col-record record-time">
+									<time>18:00</time>
+									<div class="row justify-content-between">
+										<div class="col quarter-hour room-used"></div>
 										<div class="col quarter-hour room-useable"></div>
 										<div class="col quarter-hour room-useable"></div>
 										<div class="col quarter-hour room-useable"></div>
 									</div>
 								</div>
-								<div class="col record-time">
+								<div class="col-record record-time">
 									<time>19:00</time>
 									<div class="row justify-content-between">
 										<div class="col quarter-hour room-useable"></div>
-										<div class="col quarter-hour room-useable"></div>
-										<div class="col quarter-hour room-useable"></div>
+										<div class="col quarter-hour room-used"></div>
+										<div class="col quarter-hour room-used"></div>
 										<div class="col quarter-hour room-useable"></div>
 									</div>
 								</div>
-								<div class="col record-time">
+								<div class="col-record record-time">
 									<time>20:00</time>
 									<div class="row justify-content-between">
-										<div class="col quarter-hour room-useable"></div>
+										<div class="col quarter-hour room-used"></div>
 										<div class="col quarter-hour room-useable"></div>
 										<div class="col quarter-hour room-useable"></div>
 										<div class="col quarter-hour room-useable"></div>
 									</div>
 								</div>
+								<div class="col-record">
+					
+								</div>
 							</div>
-							<!--会议室预订时间 第四行 结束-->
+							<!--会议室预订时间 第二行 结束-->
+
+
 						</div>
 					</div>
 				</div>
@@ -234,9 +236,5 @@
 	</body>
 
 </html>
-<script src="js/mobiscroll_002.js" type="text/javascript"></script>
-<script src="js/mobiscroll_004.js" type="text/javascript"></script>
-<script src="js/mobiscroll.js" type="text/javascript"></script>
-<script src="js/mobiscroll_003.js" type="text/javascript"></script>
-<script src="js/mobiscroll_005.js" type="text/javascript"></script>
-<script src="js/data.js" type="text/javascript"></script>
+<script src="js/mobiscroll.2.13.2.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
