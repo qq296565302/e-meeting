@@ -50,6 +50,7 @@ button:focus {
 	outline: none;
 }
 
+
 /*---- 通用样式 ----*/
 
 .wrapper-top {
@@ -62,7 +63,17 @@ button:focus {
 	background-color: #f0f0f0;
 }
 
+.black-bg {
+	background-color: #000000;
+}
 
+.top-close-icon{
+	text-align: end;
+}
+
+.top-title{
+	padding-left: 0;
+}
 /*---- 指纹识别 开始----*/
 
 .fingerprint {
@@ -392,3 +403,33 @@ button:focus {
 
 
 /*---- 快速预订 结束 ----*/
+
+
+/*---- 人脸识别 开始 ----*/
+
+.face-recognition img {
+	position: absolute;
+	width: 100%;
+}
+
+.face-recognition .face-btn {
+	bottom: 0;
+}
+
+/*---- 人脸识别 结束 ----*/
+
+/*---- 扫描二维码  开始----*/
+.scan-qr-icon{
+	margin-top: 180px;
+}
+.scan-qr-icon img{
+	width: 100%;
+}
+.scan-qr-text{
+	margin-top: 10px;
+	text-align: center;
+}
+.scan-qr-text p{
+	color: #fff;
+}
+/*---- 扫描二维码  结束----*/
