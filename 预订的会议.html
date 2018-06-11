@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title>预订的会议</title>
+		<title>会议室查看</title>
 		<!--页面的元信息-->
 		<meta name="renderer" content="webkit">
 		<meta http-equiv="X-UA-Co<strong>m</strong>patible" content="IE=edge,chrome=1">
@@ -21,6 +21,7 @@
 		<link rel="stylesheet" href="css/main.css">
 		<!--图标-->
 		<link rel="stylesheet" type="text/css" href="css/font.css" />
+		<link rel="stylesheet" type="text/css" href="css/mobiscroll.2.13.2.css" />
 	</head>
 
 	<body class="gray-body">
@@ -44,12 +45,76 @@
 			<!--顶部 结束-->
 
 			<!--预定的会议 Tabs 开始-->
-			<div class="row justify-content-center reservation-tabs">
-				<div class="col-11">
-					<div class="row align-items-center">
+			<div class="row justify-content-center bg-white">
+				<div class="col-12">
+					<div class="row align-items-center  reservation-tabs">
 						<a href="##" class="reservation-tabs-active">我预定的会议</a>
 						<a href="##">我参加的会议</a>
 					</div>
+					<!--会议名称 开始-->
+					<div class="row align-items-center meeting-choose">
+						<!--标题-->
+						<div class="col-4 meeting-choose-title">
+							<p>会议名称</p>
+						</div>
+						<!--地点选择-->
+						<div class="col-8">
+							<div data-role="fieldcontain">
+								<select class="room-option" data-role="none">
+									<option value="1">全部会议</option>
+									<option value="2">会议名称1</option>
+									<option value="3">会议名称2</option>
+									<option value="4">会议名称3</option>
+									<option value="5">会议名称4</option>
+									<option value="6">会议名称5</option>
+									<option value="7">会议名称6</option>
+									<option value="8">会议名称7</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<!--会议名称 结束-->
+					
+					<!--选择会议室 开始-->
+					<div class="row align-items-center meeting-choose">
+						<!--标题-->
+						<div class="col-4 meeting-choose-title">
+							<p>会议室</p>
+						</div>
+						<!--地点选择-->
+						<div class="col-8">
+							<div data-role="fieldcontain">
+								<select class="room-option" data-role="none">
+									<option value="1">全部会议室</option>
+									<option value="2">1号会议室</option>
+									<option value="3">2号会议室</option>
+									<option value="4">3号会议室</option>
+									<option value="5">4号会议室</option>
+									<option value="6">5号会议室</option>
+									<option value="7">6号会议室</option>
+									<option value="8">7号会议室</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<!--选择会议室 结束-->
+					
+					<!--选择会议日期 开始-->
+					<div class="row align-items-center meeting-choose">
+						<!--标题-->
+						<div class="col-4 meeting-choose-title">
+							<p>会议日期</p>
+						</div>
+						<!--日期选择-->
+						<div class="col-6 meeting-choose-input">
+							<input id="meeting-date" placeholder="2018/01/01" />
+						</div>
+						<!--日期选择 图标-->
+						<div class="col-2">
+							<i class="iconfont icon-date"></i>
+						</div>
+					</div>
+					<!--选择会议日期 结束-->
 				</div>
 			</div>
 			<!--预定的会议 Tabs 结束-->
@@ -165,9 +230,11 @@
 
 <script type="text/javascript">
 	$(".join-list").hide();
-	$(".reservation-tabs").click(function() {
+	$(".reservation-tabs a").click(function() {
 		$(".reservation-tabs a").toggleClass("reservation-tabs-active");
 		$(".reservation-list").toggle();
 		$(".join-list").toggle();
 	})
 </script>
+<script src="js/mobiscroll.2.13.2.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/main.js" type="text/javascript" charset="utf-8"></script>

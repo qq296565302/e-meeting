@@ -28,6 +28,7 @@ a:hover {
 
 input::-webkit-input-placeholder {
 	color: #666;
+	font-size: 14px;
 }
 
 input::-moz-placeholder {
@@ -67,13 +68,19 @@ button:focus {
 	background-color: #000000;
 }
 
-.top-close-icon{
+.top-close-icon {
 	text-align: end;
 }
 
-.top-title{
+.top-title {
 	padding-left: 0;
 }
+
+.bg-white {
+	background-color: white;
+}
+
+
 /*---- 指纹识别 开始----*/
 
 .fingerprint {
@@ -115,16 +122,13 @@ button:focus {
 
 /*---- 账号绑定 开始 ----*/
 
-.account-bg {
-	background: url(../img/account-bg.png) no-repeat;
-	width: 100%;
-	height: 100%;
-	background-size: 100% 100%;
-	position: absolute;
+.account {
+	background-color: #e8f5fe;
 }
 
 .account-title {
-	margin: 100px 0;
+	padding: 0;
+	margin-bottom: 10px;
 }
 
 .account-title img {
@@ -136,44 +140,51 @@ button:focus {
 	border-radius: 50px;
 	margin-bottom: 20px;
 	width: 100%;
-	height: 50px;
+	height: 40px;
 }
 
 .account-input {
-	background-color: #42a4ef;
+	border: 1px solid #158ee9;
+	background-color: transparent;
 }
 
 .account-button {
-	background-color: #e2e3e7;
-	border-bottom: 5px solid #cfcfd1;
+	background-color: #158ee9;
+	/*border-bottom: 5px solid #cfcfd1;*/
 	margin-top: 40px;
 }
 
 .account-input-img {
-	text-align: end;
+	text-align: center;
+	padding: 0;
 }
 
 .account-input-img img {
-	height: 30px;
+	height: 18px;
+}
+
+.account-input-text {
+	padding: 0;
 }
 
 .account-input input {
 	border: none;
 	background-color: transparent;
-	color: #fff;
-	font-size: 18px;
+	color: #666;
+	font-size: 14px;
 	width: 100%;
-	height: 40px;
-	line-height: 40px;
+	height: 30px;
+	line-height: 30px;
 }
 
 .account-button button {
 	background-color: transparent;
 	border: none;
-	color: #666;
-	font-size: 24px;
+	color: #fff;
+	font-size: 16px;
 	width: 100%;
 	height: 100%;
+	letter-spacing: 14px;
 	outline: none;
 }
 
@@ -197,12 +208,25 @@ button:focus {
 .meeting-choose input {
 	border: none;
 	color: #666;
+	font-size: 14px;
+	padding: 0;
 }
-
-.meeting-choose p {
+.dw-i{
 	font-size: 14px;
 }
+.meeting-choose p {
+	font-size: 16px;
+}
 
+.meeting-choose-title,
+.meeting-choose-input {
+	text-align: end;
+	padding-right: 10px;
+}
+.meeting-choose-input{
+	padding-left: 15px;
+	text-align: start;
+}
 .meeting-choose .icon-date {
 	font-size: 24px !important;
 	color: #0062CC;
@@ -294,18 +318,17 @@ button:focus {
 .reservation-tabs {
 	background-color: #fff;
 	border-bottom: 1px solid #ddd;
-	height: 60px;
-}
-
-.reservation-tabs .row {
-	height: 60px;
+	height: 35px;
 	text-align: center;
+	padding: 0 10px;
+	margin-top: 5px;
 }
 
 .reservation-tabs a {
 	width: 50%;
 	background-color: #74bbf3;
 	padding: 3px 0;
+	font-size: 14px;
 }
 
 .reservation-tabs a:first-child {
@@ -416,20 +439,28 @@ button:focus {
 	bottom: 0;
 }
 
+
 /*---- 人脸识别 结束 ----*/
 
+
 /*---- 扫描二维码  开始----*/
-.scan-qr-icon{
+
+.scan-qr-icon {
 	margin-top: 180px;
 }
-.scan-qr-icon img{
+
+.scan-qr-icon img {
 	width: 100%;
 }
-.scan-qr-text{
+
+.scan-qr-text {
 	margin-top: 10px;
 	text-align: center;
 }
-.scan-qr-text p{
+
+.scan-qr-text p {
 	color: #fff;
 }
+
+
 /*---- 扫描二维码  结束----*/

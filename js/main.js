@@ -64,7 +64,8 @@ $(function() {
 		}
 	}
 	$('#demo1').scroller($.extend(opt['dateY'], opt['default']));
-	$('#demo2').scroller($.extend(opt['dateYM'], opt['default']));
+	$('#start-time').scroller($.extend(opt['datetime'], opt['default']));
+	$('#end-time').scroller($.extend(opt['datetime'], opt['default']));
 	$('#meeting-date').scroller($.extend(opt['dateYMD'], opt['default']));
 	$('.room-option').scroller($.extend(opt['select'], opt['default']));
 	$('.demo-test-select-opt').scroller($.extend(opt['select-opt'], opt['default']));
