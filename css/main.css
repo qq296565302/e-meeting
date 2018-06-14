@@ -80,6 +80,18 @@ button:focus {
 	background-color: white;
 }
 
+.absolute {
+	position: absolute;
+}
+
+.relative {
+	position: relative;
+}
+
+.display-none {
+	display: none;
+}
+
 
 /*---- 指纹识别 开始----*/
 
@@ -211,9 +223,11 @@ button:focus {
 	font-size: 14px;
 	padding: 0;
 }
-.dw-i{
+
+.dw-i {
 	font-size: 14px;
 }
+
 .meeting-choose p {
 	font-size: 16px;
 }
@@ -223,10 +237,12 @@ button:focus {
 	text-align: end;
 	padding-right: 10px;
 }
-.meeting-choose-input{
+
+.meeting-choose-input {
 	padding-left: 15px;
 	text-align: start;
 }
+
 .meeting-choose .icon-date {
 	font-size: 24px !important;
 	color: #0062CC;
@@ -422,7 +438,123 @@ button:focus {
 
 /*---- 快速预订 开始 ----*/
 
-.quick-booking-table {}
+.booking-input {
+	padding: 0;
+}
+
+.booking-input input {
+	width: 100%;
+}
+
+.booking-input-time {
+	padding: 0;
+}
+
+.booking-input-date {
+	padding-left: 15px;
+}
+
+.booking-input-time input {
+	width: 35%;
+}
+
+.circulation-date input {
+	text-align: center;
+	width: 40%;
+}
+
+.circulation-checkbox {
+	height: 50px;
+}
+
+.circulation-checkbox label {
+	color: #666;
+	font-size: 12px;
+}
+
+
+/*CheckBox 样式*/
+
+.formcheckbox {
+	padding-right: 0;
+}
+
+.formcheckbox .form-label {
+	display: inline-block;
+}
+
+.formcheckbox .form-radio {
+	display: none
+}
+
+.formcheckbox .form-radioInput {
+	background-color: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	border-radius: 100%;
+	display: inline-block;
+	height: 12px;
+	margin-right: 5px;
+	margin-top: -3px;
+	vertical-align: middle;
+	width: 12px;
+	line-height: 1
+}
+
+.formcheckbox .form-radio:checked+.form-radioInput:after {
+	/*background-color: #3e4656;*/
+	border-radius: 100%;
+	border: 1px solid #168de9;
+	content: '\2714';
+	color: #168de9;
+	display: inline-block;
+	height: 12px;
+	width: 12px
+}
+
+.formcheckbox .form-checkbox.form-radioInput,
+.formcheckbox .form-radio:checked+.form-checkbox.form-radioInput:after {
+	border-radius: 0
+}
+
+
+/*Radio 样式*/
+
+.formradio .form-label {
+	display: inline-block;
+}
+
+.formradio .form-radio {
+	display: none
+}
+
+.formradio .form-radioInput {
+	background-color: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	border-radius: 100%;
+	display: inline-block;
+	height: 16px;
+	margin-right: 5px;
+	margin-top: -3px;
+	vertical-align: middle;
+	width: 16px;
+	line-height: 1
+}
+
+.formradio .form-radio:checked+.form-radioInput:after {
+	background-color: #168de9;
+	border-radius: 100%;
+	content: '';
+	color: #168de9;
+	display: inline-block;
+	margin: 3px;
+	height: 8px;
+	width: 8px
+}
+
+.formradio .form-checkbox.form-radioInput,
+.formradio .form-radio:checked+.form-checkbox.form-radioInput:after {
+	border-radius: 100px;
+}
 
 
 /*---- 快速预订 结束 ----*/
@@ -464,3 +596,154 @@ button:focus {
 
 
 /*---- 扫描二维码  结束----*/
+
+
+/*---- 签到统计 开始 ----*/
+
+.solid-circle {
+	width: 150px;
+	height: 150px;
+	display: block;
+	background-color: #fff;
+	border-radius: 100px;
+	left: 0;
+	top: 105px;
+}
+
+.circle-info {
+	text-align: center;
+}
+
+.circle-info i {
+	display: inline-flex;
+	width: 12px;
+	height: 12px;
+	background-color: #0050EF;
+	border-radius: 14px;
+}
+
+.circle-info p {
+	color: #777;
+	display: inline-flex;
+	margin-left: 20px;
+}
+
+.circle-info span {
+	width: 30px;
+	margin-left: 10px;
+}
+
+.circle-info-normal i {
+	background-color: #28c16e;
+}
+
+.circle-info-later i {
+	background-color: #ff994e;
+}
+
+.circle-info-early i {
+	background-color: #ff6d60;
+}
+
+.circle-info-nobody i {
+	background-color: #e6e6e6;
+}
+
+.circle-info-normal span {
+	color: #28c16e;
+}
+
+
+/*---- 签到统计 结束 ----*/
+
+
+/*---- 快速预订:用户组 开始 ----*/
+
+.user-group {
+	background-color: #fff;
+	padding: 10px 0;
+}
+
+.user-selection,
+.userd-selection {
+	border: 1px solid #7fbfee;
+	height: 200px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.user-selection-left {
+	padding-right: 0 !important;
+}
+
+.user-selection-right {
+	padding-left: 0;
+}
+
+.user-move img {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.selection-group p,
+.selection-group i {
+	color: #7fbfee;
+	font-size: 14px !important;
+}
+
+.selection-th {
+	padding: 5px 15px;
+}
+
+.selection-th-title,
+.selection-tb-title {
+	padding-right: 0;
+	text-align: end;
+}
+
+.selection-th-checkbox,
+.selection-tb-checkbox {
+	padding-left: 0;
+}
+
+.selection-tb {
+	display: none;
+}
+
+.selection-tb-active {
+	display: block;
+}
+
+.selection-th p,
+.selection-tb p {
+	width: 95%;
+	margin-left: -5px;
+}
+
+.selection-th i {
+	margin-right: 5px;
+}
+
+.selected {
+	padding-top:6px;
+}
+.selected-active{
+	background-color: #ddd;
+}
+.selected-name {
+	padding-right: 0;
+	color: #7fbfee;
+}
+
+.selected-name p {
+	font-size: 14px;
+	margin-left: 5px;
+}
+
+.selected-icon i {
+	font-size: 14px !important;
+	color: #7fbfee;
+}
+
+
+/*---- 快速预订:用户组 结束 ----*/

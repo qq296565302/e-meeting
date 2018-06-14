@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<div class="row justify-content-center">
+			<canvas id="can1" width="800" height="600" style="position: absolute;"></canvas>
+			<script type="text/javascript">
+				var can1 = document.getElementById("can1");
+				var ctx = can1.getContext("2d");
+				var nums = [30,12,40,18];
+				var colors = ["#ff6d60", "#ff994e", "#28c16e", "#e6e6e6"];
+				var start = 0;
+				var end = 0;
+				ctx.translate(400, 350);
+				//绘制圆饼  
+				function pieChart() {
+					for(var i = 0; i < nums.length; i++) {
+						ctx.beginPath();
+						ctx.moveTo(0, 0);
+						end += nums[i] / 50 * Math.PI; //终止角度  
+						ctx.strokeStyle = "white";
+						ctx.fillStyle = colors[i];
+						ctx.arc(0, 0, 200, start, end);
+						ctx.fill();
+						ctx.closePath();
+						ctx.stroke();
+						start += nums[i] / 50 * Math.PI; //起始角度  
+					}
+				}
+				ctx.rotate(-Math.PI / 2); //旋转一定角度更加自然  
+				pieChart();
+				pieNum();
+			</script>
+			<div style="width: 200px;height: 200px;display: block;position: relative;background-color: #fff;border-radius: 300px;left: 300px;top: 250px;"></div>
+		</div>
+	</body>
+
+</html>

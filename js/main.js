@@ -38,7 +38,7 @@ $(function() {
 		},
 		'dateYMD': {
 			preset: 'date',
-			dateFormat: 'yyyy-mm-dd',
+			dateFormat: 'yyyy/mm/dd',
 			defaultValue: new Date(new Date()),
 			invalid: {
 				daysOfWeek: [0, 6],
@@ -63,10 +63,38 @@ $(function() {
 			width: 50
 		}
 	}
-	$('#demo1').scroller($.extend(opt['dateY'], opt['default']));
+	$('#meeting-start-time').scroller($.extend(opt['time'], opt['default']));
+	$('#meeting-end-time').scroller($.extend(opt['time'], opt['default']));
 	$('#start-time').scroller($.extend(opt['datetime'], opt['default']));
 	$('#end-time').scroller($.extend(opt['datetime'], opt['default']));
-	$('#meeting-date').scroller($.extend(opt['dateYMD'], opt['default']));
+	$('.meeting-date').scroller($.extend(opt['dateYMD'], opt['default']));
 	$('.room-option').scroller($.extend(opt['select'], opt['default']));
 	$('.demo-test-select-opt').scroller($.extend(opt['select-opt'], opt['default']));
 });
+//饼状图
+var can1 = document.getElementById("can1");
+var ctx = can1.getContext("2d");
+var nums = [30, 12, 40, 18];
+var colors = ["#ff6d60", "#ff994e", "#28c16e", "#e6e6e6"];
+var start = 0;
+var end = 0;
+ctx.translate(150, 180);
+//绘制圆饼  
+function pieChart() {
+	for(var i = 0; i < nums.length; i++) {
+		ctx.beginPath();
+		ctx.moveTo(0, 0);
+		end += nums[i] / 50 * Math.PI; //终止角度  
+		ctx.strokeStyle = "white";
+		ctx.fillStyle = colors[i];
+		ctx.arc(0, 0, 150, start, end);
+		ctx.fill();
+		ctx.closePath();
+		ctx.stroke();
+		start += nums[i] / 50 * Math.PI; //起始角度  
+	}
+}
+ctx.rotate(-Math.PI / 2); //旋转一定角度更加自然  
+pieChart();
+pieNum();
+

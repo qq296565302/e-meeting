@@ -24,7 +24,7 @@
 		<link rel="stylesheet" type="text/css" href="css/mobiscroll.2.13.2.css" />
 	</head>
 
-	<body class="gray-body">
+	<body>
 		<!--签到统计 开始-->
 		<div class="container-fluid">
 			<!--顶部 开始-->
@@ -43,7 +43,7 @@
 				</div>
 			</div>
 			<!--顶部 结束-->
-			
+
 			<!--签到统计 筛选 开始-->
 			<div class="row justify-content-center bg-white">
 				<div class="col-12">
@@ -54,7 +54,7 @@
 							<p>会议名称</p>
 						</div>
 						<!--地点选择-->
-						<div class="col-8">
+						<div class="col-6">
 							<div data-role="fieldcontain">
 								<select class="room-option" data-role="none">
 									<option value="1">全部会议</option>
@@ -68,9 +68,12 @@
 								</select>
 							</div>
 						</div>
+						<div class="col-2">
+							<i class="iconfont icon-jiantou"></i>
+						</div>
 					</div>
 					<!--会议名称 结束-->
-					
+
 					<!--选择会议室 开始-->
 					<div class="row align-items-center meeting-choose">
 						<!--标题-->
@@ -78,7 +81,7 @@
 							<p>会议室</p>
 						</div>
 						<!--地点选择-->
-						<div class="col-8">
+						<div class="col-6">
 							<div data-role="fieldcontain">
 								<select class="room-option" data-role="none">
 									<option value="1">全部会议室</option>
@@ -92,9 +95,12 @@
 								</select>
 							</div>
 						</div>
+						<div class="col-2">
+							<i class="iconfont icon-jiantou"></i>
+						</div>
 					</div>
 					<!--选择会议室 结束-->
-					
+
 					<!--开始时间 开始-->
 					<div class="row align-items-center meeting-choose">
 						<!--标题-->
@@ -111,7 +117,7 @@
 						</div>
 					</div>
 					<!--开始时间  结束-->
-					
+
 					<!--结束时间 开始-->
 					<div class="row align-items-center meeting-choose">
 						<!--标题-->
@@ -131,6 +137,38 @@
 				</div>
 			</div>
 			<!--签到统计 筛选 结束-->
+
+			<!--饼状图 开始-->
+			<div class="row justify-content-center" style="height: 350px;">
+				<canvas id="can1" width="300" height="350" class="absolute"></canvas>
+				<div class="relative solid-circle"></div>
+			</div>
+			<!--饼状图 结束-->
+			<br />
+			<!--饼状图信息 开始-->
+			<div class="row justify-content-around circle-info">
+				<div class="col-6 circle-info-normal">
+					<i></i>
+					<p>正常<span>100</span></p>
+				</div>
+				<div class="col-6 circle-info-later">
+					<i></i>
+					<p>迟到<span>30</span></p>
+				</div>
+			</div>
+			<br />
+			<div class="row justify-content-around circle-info">
+				<div class="col-6 circle-info-early">
+					<i></i>
+					<p>早退<span>50</span></p>
+				</div>
+				<div class="col-6 circle-info-nobody">
+					<i></i>
+					<p>缺卡<span>20</span></p>
+				</div>
+			</div>
+			<br />
+			<!--饼状图信息 结束-->
 		</div>
 		<!--签到统计 结束-->
 	</body>
